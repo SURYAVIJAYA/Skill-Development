@@ -1,0 +1,30 @@
+.splash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.splash-logo {
+    width: 340px;
+    animation: logoZoom 1.5s ease;
+}
+
+@keyframes logoZoom {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

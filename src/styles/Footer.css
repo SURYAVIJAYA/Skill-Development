@@ -1,0 +1,143 @@
+/* ================= FOOTER MOBILE RESPONSIVE ================= */
+
+@media (max-width:1024px) {
+
+    .footer-container {
+        padding: 25px 6%;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-logo {
+        height: 80px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .footer {
+        padding-top: 15px;
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+}
+
+.footer {
+    background: #0A0A6B;
+    color: white;
+    padding-top: 20px;
+    /* reduced height */
+}
+
+/* container */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+}
+
+/* section */
+
+.footer-section {
+    width: 220px;
+}
+
+/* headings */
+
+.footer-section h3 {
+    margin-bottom: 12px;
+}
+
+/* list */
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+}
+
+/* LOGO SIZE INCREASED */
+
+.footer-logo {
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+/* SOCIAL ICONS */
+
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons span {
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-icons span:hover {
+    transform: scale(1.2);
+}
+
+/* bottom bar */
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #146C8F;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD800;
+}

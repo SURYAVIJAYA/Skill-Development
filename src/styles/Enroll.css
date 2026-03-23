@@ -1,0 +1,140 @@
+/* ================= ENROLL PAGE MOBILE RESPONSIVE ================= */
+
+@media (max-width:1024px) {
+
+    .enroll-card {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .enroll-card {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .enroll-image {
+        height: 220px;
+    }
+
+    .enroll-form {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .enroll-section {
+        padding: 40px 10px;
+    }
+
+    .enroll-image {
+        height: 180px;
+    }
+
+    .enroll-form h2 {
+        font-size: 22px;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}
+
+.enroll-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+/* SINGLE CARD */
+.enroll-card {
+    display: flex;
+    width: 1100px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* IMAGE SIDE */
+.enroll-image {
+    width: 100%;
+}
+
+.enroll-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORM SIDE */
+.enroll-form {
+    width: 50%;
+    padding: 40px;
+}
+
+.enroll-form h2 {
+    text-align: center;
+    color: #d4a100;
+    margin-bottom: 25px;
+}
+
+/* INPUT ROWS */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* GENDER */
+.gender {
+    margin: 10px 0;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: #ffd800;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}

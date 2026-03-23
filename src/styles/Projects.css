@@ -1,0 +1,298 @@
+.projects-section {
+    background: #f4f6fb;
+    padding: 50px 0 40px;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0A0A6B;
+}
+
+.projects-container {
+    position: relative;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card style */
+.projects-container {
+    position: relative;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* base card */
+
+.card {
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* images */
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* center card */
+
+.center {
+    transform: translateX(0) scale(1.15);
+    z-index: 5;
+}
+
+/* left cards */
+
+.left1 {
+    transform: translateX(-180px) scale(0.9);
+    z-index: 4;
+}
+
+.left2 {
+    transform: translateX(-360px) scale(0.8);
+    z-index: 3;
+}
+
+/* right cards */
+
+.right1 {
+    transform: translateX(180px) scale(0.9);
+    z-index: 4;
+}
+
+.right2 {
+    transform: translateX(360px) scale(0.8);
+    z-index: 3;
+}
+
+/* hover highlight */
+
+.card:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 15px;
+    color: #666;
+}
+
+/* center card */
+
+.center {
+    transform: scale(1.15);
+    z-index: 5;
+}
+
+/* left cards */
+
+.left1 {
+    transform: translateX(-220px) scale(0.9);
+    opacity: 0.8;
+    z-index: 4;
+}
+
+.left2 {
+    transform: translateX(-420px) scale(0.75);
+    opacity: 0.6;
+}
+
+/* right cards */
+
+.right1 {
+    transform: translateX(220px) scale(0.9);
+    opacity: 0.8;
+    z-index: 4;
+}
+
+.right2 {
+    transform: translateX(420px) scale(0.75);
+    opacity: 0.6;
+}
+
+/* EXPERTS SECTION */
+.experts-section {
+    padding: 80px 10%;
+    background: #f4f6fb;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.experts-title {
+    text-align: center;
+    font-size: 38px;
+    color: #0A0A6B;
+    margin: 50px auto 10px;
+    padding: 0 10%;
+}
+
+/* highlight word */
+
+.experts-title span {
+    color: #FFD800;
+}
+
+.experts-subtitle {
+    text-align: center;
+    color: #666;
+    margin: 0 auto 30px;
+    padding: 0 10%;
+    font-size: 16px;
+}
+
+/* experts container */
+
+.experts-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* expert card */
+
+.expert-card {
+    background: white;
+    width: 230px;
+    /* decreased width */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.expert-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.experts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* reduce space */
+    flex-wrap: wrap;
+}
+
+.experts-title span {
+    color: #FFD800;
+}
+
+/* text */
+
+.expert-card h3 {
+    margin-top: 12px;
+    color: #0A0A6B;
+    text-align: center;
+}
+
+.expert-card p {
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* hover */
+
+.expert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* wrapper to give experts section consistent bottom spacing */
+.experts-container {
+    margin-bottom: 50px;
+}
+
+/* ================= PROJECTS MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px) {
+
+    .projects-title {
+        font-size: 30px;
+    }
+
+    .projects-container {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        position: relative;
+        transform: none !important;
+        width: 220px;
+        height: auto;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .projects-title {
+        font-size: 24px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .experts-section {
+        padding: 50px 6%;
+    }
+
+    .experts-title {
+        font-size: 26px;
+    }
+
+    .experts-subtitle {
+        font-size: 14px;
+    }
+
+    .expert-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+}

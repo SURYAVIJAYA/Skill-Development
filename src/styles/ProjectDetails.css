@@ -1,0 +1,137 @@
+.project-details {
+    padding: 80px 10%;
+    background: #f5f7fb;
+    min-height: 80vh;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.project-header h1 {
+    font-size: 42px;
+    color: #0A0A6B;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.project-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-image img {
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h2 {
+    color: #0A0A6B;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.project-info p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.project-info ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.project-info li {
+    margin-bottom: 8px;
+}
+
+.project-btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #FFD800;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #D4A100;
+    color: white;
+}
+
+/* ================= PROJECT DETAILS MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px) {
+
+    .project-details {
+        padding: 60px 6%;
+    }
+
+    .project-header h1 {
+        font-size: 32px;
+    }
+
+    .project-header p {
+        font-size: 16px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 100%;
+        max-width: 380px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .project-details {
+        padding: 40px 6%;
+    }
+
+    .project-header h1 {
+        font-size: 26px;
+    }
+
+    .project-header p {
+        font-size: 14px;
+    }
+
+    .project-image img {
+        max-width: 100%;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .project-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}

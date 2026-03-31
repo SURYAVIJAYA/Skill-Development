@@ -41,7 +41,7 @@
 .placements-hero h1 {
     font-size: 52px;
     font-weight: bold;
-    color: #0A0A6B;
+    color: #1E1B4B;
 }
 
 .placements-hero p {
@@ -64,7 +64,7 @@
 
 .placement-stats .stat-card h2 {
     font-size: 40px;
-    color: #e53935;
+    color: #9B5DE5;
     margin: 0;
 }
 
@@ -139,8 +139,9 @@
 }
 
 .companies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     max-width: 1000px;
@@ -167,7 +168,7 @@
     display: block;
     margin-top: 5px;
     font-weight: bold;
-    color: #f5b301;
+    color: #20C9F3;
 }
 
 /* ================= PLACEMENTS MOBILE RESPONSIVE ================= */

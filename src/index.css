@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 /* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width:1024px) {
@@ -40,11 +42,11 @@
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #213547;
+  color: #1a1d2e;
   background-color: #ffffff;
 
   font-synthesis: none;
@@ -78,12 +80,12 @@ body {
 
 a {
   font-weight: 500;
-  color: #146C8F;
+  color: #4361EE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0E6B64;
+  color: #20C9F3;
 }
 
 /* Buttons */
@@ -95,15 +97,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #0A0A6B;
+  background-color: #4361EE;
   color: white;
   cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  border-color: #FFD800;
-  background-color: #146C8F;
+  border-color: #20C9F3;
+  background-color: #3451D1;
 }
 
 h1 {

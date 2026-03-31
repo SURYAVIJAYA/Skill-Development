@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import "../../styles/ProjectDetails.css";
@@ -6,9 +6,9 @@ import "../../styles/ProjectDetails.css";
 function ProjectDetails() {
 
     const { name } = useParams();
+    const navigate = useNavigate();
 
     const projects = {
-
 
         cyclone: {
             title: "Cyclone Software Project",
@@ -52,21 +52,35 @@ function ProjectDetails() {
             ]
         },
 
-
     };
 
     const project = projects[name];
 
     if (!project) {
-        return <h1 style={{ textAlign: "center", marginTop: "100px" }}>Project Not Found</h1>;
+        return (
+            <>
+                <Navbar />
+                <h1 style={{ textAlign: "center", marginTop: "100px" }}>
+                    Project Not Found
+                </h1>
+                <Footer />
+            </>
+        );
     }
 
     return (
-
         <>
             <Navbar />
 
             <div className="project-details">
+
+                {/* ✅ Back Button */}
+                <button
+                    className="back-btn"
+                    onClick={() => navigate("/projects")}
+                >
+                    ← Back
+                </button>
 
                 <div className="project-header">
                     <h1>{project.title}</h1>
@@ -98,7 +112,9 @@ function ProjectDetails() {
                             ))}
                         </ul>
 
-                        <button className="project-btn">View Project Demo</button>
+                        <button className="project-btn">
+                            View Project Demo
+                        </button>
 
                     </div>
 
@@ -108,9 +124,7 @@ function ProjectDetails() {
 
             <Footer />
         </>
-
     );
-
 }
 
 export default ProjectDetails;

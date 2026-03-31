@@ -12,7 +12,7 @@ function Navbar() {
             <div className="navbar">
 
                 {/* Logo */}
-                <img src="/images/logo/logo.png" alt="logo" className="logo" />
+                <img src="https://res.cloudinary.com/deuzwxg3v/image/upload/v1774864948/WhatsApp_Image_2026-03-30_at_3.27.50_PM-removebg-preview_ylr5qh.png" alt="logo" className="logo" />
 
                 {/* Hamburger (mobile only) */}
                 <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

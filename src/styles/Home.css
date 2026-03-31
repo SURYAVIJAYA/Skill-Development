@@ -1,7 +1,7 @@
 .home {
     width: 100%;
     min-height: 100vh;
-    background: #F5F5F5;
+    background: #f0f4ff;
     display: flex;
     flex-direction: column;
 }
@@ -37,74 +37,123 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 0 0 60px 10%;
+    padding: 0 0 40px 5%;
     color: #f1d531;
 }
 
 /* LEFT TEXT */
 
+/* HERO TEXT CONTAINER */
 .hero-text {
-    width: 50%;
+    width: auto;
+    max-width: 480px;
+
+    /* Glass effect (remove if you don’t want) */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    padding: 20px 25px;
+    border-radius: 12px;
 }
 
+
+/* HEADING */
 .hero-text h1 {
-    font-size: 52px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 800;
     letter-spacing: 1px;
+    line-height: 1.2;
+    color: white;
+
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
 }
 
+
+/* BUILD HIGHLIGHT */
 .highlight {
-    color: #3d95b4;
-    /* blue color */
+    color: #20C9F3;
+    /* logo cyan */
+    font-weight: 900;
 }
 
+
+/* PARAGRAPH */
 .hero-text p {
-    font-size: 17px;
-    max-width: 500px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f1f1f1;
+
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 
-/* BUTTONS */
 
+/* BUTTON CONTAINER */
 .hero-buttons {
-    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
 }
 
+
+/* ENROLL BUTTON */
 .enroll-btn {
-    background: #FFD800;
-    color: #000;
+    background: #20C9F3;
+    color: #1E1B4B;
     border: none;
-    padding: 12px 28px;
+    padding: 10px 22px;
     border-radius: 25px;
-    margin-right: 15px;
     cursor: pointer;
+    font-size: 14px;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .enroll-btn:hover {
-    background: #D4A100;
+    background: #0DAED8;
 }
 
+
+/* WATCH BUTTON */
 .watch-btn {
     background: transparent;
-    border: 2px solid #D4A100;
-    padding: 12px 28px;
+    border: 2px solid #20C9F3;
+    padding: 10px 22px;
     border-radius: 25px;
     cursor: pointer;
-    color: #D4A100;
+    color: #20C9F3;
+    font-size: 14px;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .watch-btn:hover {
-    background: #D4A100;
-    color: white;
+    background: #20C9F3;
+    color: #1E1B4B;
+}
+
+
+/* OPTIONAL ANIMATION */
+.hero-text {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* SECTION */
 
 .courses-section {
-    background: #F5F5F5;
+    background: #f0f4ff;
     padding: 60px 0;
 }
 
@@ -121,13 +170,13 @@
 }
 
 .courses-title span {
-    color: #e53935;
+    color: #9B5DE5;
     font-size: 13px;
     font-weight: 600;
 }
 
 .courses-title h2 {
-    color: #0A0A6B;
+    color: #1E1B4B;
     font-size: 30px;
 }
 
@@ -170,7 +219,7 @@
 }
 
 .course-content h3 {
-    color: #0A0A6B;
+    color: #1E1B4B;
     font-size: 18px;
 }
 
@@ -196,8 +245,8 @@
 /* BUTTON */
 
 .view-btn {
-    background: #FFD800;
-    color: #0A0A6B;
+    background: #4361EE;
+    color: #fff;
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -206,7 +255,7 @@
 }
 
 .view-btn:hover {
-    background: #D4A100;
+    background: #3451D1;
 }
 
 /* RESPONSIVE */
@@ -247,7 +296,7 @@
 
 .student-stories h3,
 .education-blog h3 {
-    color: #0A0A6B;
+    color: #1E1B4B;
     margin-bottom: 24px;
     font-size: 2rem;
     letter-spacing: 0.03em;
@@ -287,7 +336,7 @@
     display: block;
     margin-top: 5px;
     font-weight: 600;
-    color: #0A0A6B;
+    color: #4361EE;
 }
 
 .blog-post.horizontal {
@@ -307,7 +356,7 @@
 .blog-text h4 {
     margin: 0 0 5px 0;
     font-size: 1rem;
-    color: #0A0A6B;
+    color: #1E1B4B;
 }
 
 .blog-text .date {
@@ -330,25 +379,25 @@
 /* COMMUNITY CTA */
 
 .community-cta {
-    background: #FFD800;
+    background: linear-gradient(135deg, #4361EE, #9B5DE5);
     text-align: center;
     padding: 40px 10%;
 }
 
 .community-cta h2 {
-    color: #0A0A6B;
+    color: #fff;
     font-size: 2.5rem;
 }
 
 .community-cta p {
-    color: #0A0A6B;
+    color: rgba(255,255,255,0.85);
     font-size: 1.2rem;
     margin-top: 10px;
 }
 
 .community-cta button {
-    background: #0A0A6B;
-    color: #FFD800;
+    background: #20C9F3;
+    color: #1E1B4B;
     padding: 12px 30px;
     border: none;
     border-radius: 25px;
@@ -358,7 +407,7 @@
 }
 
 .community-cta button:hover {
-    background: #146C8F;
+    background: #0DAED8;
 }
 
 /* RIGHT IMAGE */
@@ -370,14 +419,14 @@
 .hero-image img {
     width: 100%;
     border-radius: 50%;
-    border: 6px solid #D4A100;
+    border: 6px solid #9B5DE5;
 }
 
 /* ABOUT SECTION */
 
 .about-section {
     padding: 50px 10%;
-    background: #0E6B64;
+    background: #1E2060;
     color: white;
 }
 
@@ -395,7 +444,7 @@
 .about-left h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #FFD800;
+    color: #20C9F3;
 }
 
 .about-left p {
@@ -413,7 +462,7 @@
 
 .stat h3 {
     font-size: 32px;
-    color: #FFD800;
+    color: #20C9F3;
 }
 
 .stat p {
@@ -423,7 +472,7 @@
 
 .about-card {
     position: relative;
-    background: #146C8F;
+    background: #4361EE;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
@@ -434,7 +483,7 @@
 
 .about-card:hover {
     transform: translateX(-8px);
-    background: #0E5A7A;
+    background: #3451D1;
 }
 
 /* POPUP */
@@ -449,7 +498,7 @@
 
     padding: 30px;
 
-    border: 2px solid #FFD800;
+    border: 2px solid #20C9F3;
 
     background:
         linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),

@@ -1,67 +1,9 @@
-/* ================= ENROLL PAGE MOBILE RESPONSIVE ================= */
-
-@media (max-width:1024px) {
-
-    .enroll-card {
-        width: 90%;
-    }
-
-}
-
-@media (max-width:768px) {
-
-    .enroll-card {
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .enroll-image {
-        height: 220px;
-    }
-
-    .enroll-form {
-        width: 100%;
-        padding: 30px 20px;
-    }
-
-    .form-row {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-}
-
-@media (max-width:480px) {
-
-    .enroll-section {
-        padding: 40px 10px;
-    }
-
-    .enroll-image {
-        height: 180px;
-    }
-
-    .enroll-form h2 {
-        font-size: 22px;
-    }
-
-    textarea {
-        height: 90px;
-    }
-
-    .submit-btn {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-}
-
 .enroll-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 0;
-    background: #f4f4f4;
+    background: #f0f4ff;
 }
 
 /* SINGLE CARD */
@@ -93,7 +35,7 @@
 
 .enroll-form h2 {
     text-align: center;
-    color: #d4a100;
+    color: #4361EE;
     margin-bottom: 25px;
 }
 
@@ -114,7 +56,24 @@
 
 /* GENDER */
 .gender {
-    margin: 10px 0;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: #333;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.gender input[type="radio"] {
+    margin: 0;
 }
 
 /* TEXTAREA */
@@ -133,8 +92,70 @@ textarea {
     margin-top: 20px;
     padding: 12px;
     border: none;
-    background: #ffd800;
+    background: linear-gradient(135deg, #4361EE, #9B5DE5);
+    color: white;
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
+}
+
+/* ================= ENROLL PAGE MOBILE RESPONSIVE ================= */
+
+@media (max-width:1024px) {
+    .enroll-card {
+        width: 90%;
+    }
+}
+
+@media (max-width:768px) {
+    .enroll-card {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .enroll-image {
+        height: 220px;
+    }
+
+    .enroll-form {
+        width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-row input,
+    .form-row select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:480px) {
+    .enroll-section {
+        padding: 40px 10px;
+    }
+
+    .enroll-image {
+        height: 180px;
+        display: none; /* Often it's better to hide big images on tiny mobile forms for UX */
+    }
+
+    .enroll-form h2 {
+        font-size: 22px;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
 }

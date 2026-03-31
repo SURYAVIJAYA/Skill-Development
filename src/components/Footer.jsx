@@ -11,7 +11,7 @@ function Footer() {
                 {/* Logo & About */}
 
                 <div className="footer-section">
-                    <img src="/images/logo/logo.png" alt="logo" className="footer-logo" />
+                    <img src="https://res.cloudinary.com/deuzwxg3v/image/upload/v1774864948/WhatsApp_Image_2026-03-30_at_3.27.50_PM-removebg-preview_ylr5qh.png" alt="logo" className="footer-logo" />
 
                     <p>
                         Skill Park provides industry-focused training

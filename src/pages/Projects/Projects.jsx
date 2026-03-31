@@ -25,18 +25,27 @@ function Projects() {
 
 
           <div className="card left1" onClick={() => openProject("cyclone")}>
-            <img src="/images/ai.jpg" />
-            <h3>Cyclone</h3>
+            <img src="/images/cyclone.jpg" />
+            <div className="card-info">
+              <h3>Cyclone</h3>
+              <p>Explore 3D laser processing and real-world project surveying modules.</p>
+            </div>
           </div>
 
           <div className="card center" onClick={() => openProject("revit")}>
-            <img src="/images/web.jpg" />
-            <h3>Revit</h3>
+            <img src="/images/revit.jpg" />
+            <div className="card-info">
+              <h3>Revit</h3>
+              <p>Advanced building information modeling for modern architectural structures.</p>
+            </div>
           </div>
 
           <div className="card right1" onClick={() => openProject("cad")}>
-            <img src="/images/marketing.jpg" />
-            <h3>AutoCad</h3>
+            <img src="/images/autocad.jpg" />
+            <div className="card-info">
+              <h3>AutoCad</h3>
+              <p>Master precise 2D drafting and comprehensive engineering designs.</p>
+            </div>
           </div>
 
         </div>

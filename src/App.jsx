@@ -1,19 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+// Pages
 import Home from "./pages/Home/Home";
 import Enroll from "./pages/Enroll/Enroll";
-import Contact from "./pages/Contact/Contact";   // ✅ important
-import SplashScreen from "./components/SplashScreen";
+import Contact from "./pages/Contact/Contact";
 import Placements from "./pages/Placements/Placements";
 import Projects from "./pages/Projects/Projects";
 import ProjectDetails from "./pages/Projects/ProjectDetails";
 import NewsEvents from "./pages/NewsEvents/NewsEvents";
 import CourseDetails from "./pages/Courses/CourseDetails";
+
+// Components
+import SplashScreen from "./components/SplashScreen";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar"; // optional but recommended
 
 function App() {
-
   const [showSplash, setShowSplash] = useState(false);
 
   useEffect(() => {
@@ -22,37 +25,42 @@ function App() {
     if (!hasSeenSplash) {
       setShowSplash(true);
 
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setShowSplash(false);
         sessionStorage.setItem("splashShown", "true");
       }, 3000);
+
+      return () => clearTimeout(timer);
     }
   }, []);
 
+  // Splash Screen
   if (showSplash) {
     return <SplashScreen />;
   }
 
   return (
-    <Router>
-      <div className="app-container">
+    <div className="app-container">
 
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/enroll" element={<Enroll />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/placements" element={<Placements />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/project/:name" element={<ProjectDetails />} />
-            <Route path="/news-events" element={<NewsEvents />} />
-            <Route path="/course/:courseId" element={<CourseDetails />} />
-          </Routes>
-        </div>
+      {/* Navbar (shows on all pages) */}
 
+      {/* Main Content */}
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/enroll" element={<Enroll />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/placements" element={<Placements />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:name" element={<ProjectDetails />} />
+          <Route path="/news-events" element={<NewsEvents />} />
+          <Route path="/course/:courseId" element={<CourseDetails />} />
+        </Routes>
       </div>
-    </Router>
+
+      {/* Footer */}
+    </div>
   );
 }
 
-export default App;
+export default App;   

@@ -1,7 +1,7 @@
 /* PAGE */
 
 .course-details {
-  background: #F5F5F5;
+  background: #f0f4ff;
   padding: 60px 20px;
   font-family: Arial, sans-serif;
 }
@@ -46,8 +46,8 @@
 .duration {
   display: inline-block;
   margin-top: 10px;
-  background: #FFD800;
-  color: #0A0A6B;
+  background: #20C9F3;
+  color: #1E1B4B;
   padding: 6px 12px;
   border-radius: 5px;
   font-weight: 600;
@@ -83,7 +83,7 @@
 /* HEADINGS */
 
 .course-box h2 {
-  color: #0A0A6B;
+  color: #1E1B4B;
   margin-bottom: 15px;
 }
 
@@ -106,11 +106,11 @@
   content: "✔";
   position: absolute;
   left: 0;
-  color: #FFD800;
+  color: #20C9F3;
 }
 
 .course-box li:hover {
-  color: #0A0A6B;
+  color: #4361EE;
   transform: translateX(5px);
 }
 
